@@ -24,22 +24,18 @@ const Layout = ({ children }) => {
     }
   `)
 
-  if (isLoaded == true) {
-    return (
-      <div id="App">
-        <Header
-          pageWrapId={"page-wrap"}
-          outerContainerId={"App"}
-          siteTitle={data.site.siteMetadata.title}
-        />
+  return (
+    <div id="App">
+      <Header
+        pageWrapId={"page-wrap"}
+        outerContainerId={"App"}
+        siteTitle={data.site.siteMetadata.title}
+      />
 
-        <main id="page-wrap">{children}</main>
-        <footer></footer>
-      </div>
-    )
-  } else if (isLoaded == false) {
-    return <Spinner />
-  }
+      <main id="page-wrap">{children}</main>
+      <footer></footer>
+    </div>
+  )
 }
 
 Layout.propTypes = {
