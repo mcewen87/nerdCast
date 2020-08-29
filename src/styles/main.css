@@ -41,9 +41,16 @@
 }
 
 .episodes {
-  margin-top: 50px;
-  font-size: 2rem;
+  margin-top: 60px;
+  font-size: 3rem;
   text-align: center;
+  animation: grow 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes grow {
+  50% {
+    transform: scale3d(1.2, 1, 1);
+  }
 }
 
 .banner {

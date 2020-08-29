@@ -14,7 +14,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="container">
       <div className="hero">
-        <h1 className="jumbo">A Podcast for the Masses</h1>
+        <h1 className="jumbo">A Podcast for the Nerd Masses</h1>
 
         <Link to="episodes">
           <h3 className="episodes"> View Episodes 🍑🍆💦👀</h3>
