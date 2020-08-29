@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useLayoutEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
@@ -8,7 +8,7 @@ import Spinner from "./spinner"
 const Layout = ({ children }) => {
   const [isLoaded, setLoaded] = useState(false)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeout(() => {
       setLoaded(true)
     }, 1200)
