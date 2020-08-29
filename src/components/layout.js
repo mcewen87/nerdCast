@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  if (isLoaded) {
+  if (isLoaded == true) {
     return (
       <div id="App">
         <Header
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <footer></footer>
       </div>
     )
-  } else {
+  } else if (isLoaded == false) {
     return <Spinner />
   }
 }
