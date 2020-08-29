@@ -4,19 +4,26 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import "../styles/main.css"
+import banner from "../images/nerdyBanner.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHandPointRight } from "@fortawesome/free-solid-svg-icons"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="container">
+      <div className="hero">
+        <h1 className="jumbo">A Podcast for the Masses</h1>
+
+        <Link to="episodes">
+          <h3 className="episodes"> View Episodes 🍑🍆💦👀</h3>
+        </Link>
+        <img src={banner} className="banner" />
+      </div>
+      <div className="slideOne"></div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  </>
 )
 
 export default IndexPage

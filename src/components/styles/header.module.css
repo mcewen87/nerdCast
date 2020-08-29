@@ -1,0 +1,33 @@
+@import "../../_vars.scss";
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+
+.background {
+  background-color: var(--yellow);
+}
+
+.logo {
+  width: 130px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.social {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.social:hover {
+  color: var(--yellow);
+}
+
+.link {
+  font-family: var(--title);
+  font-size: 1.5rem;
+}

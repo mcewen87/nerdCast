@@ -1,0 +1,134 @@
+@import "../_vars.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 800px;
+  align-self: center;
+}
+
+.slideOne {
+  background-color: var(--yellow);
+  min-height: 100vh;
+}
+
+.slideTwo {
+  background-color: var(--white);
+}
+
+.slideThree {
+  background-color: var(--gray);
+}
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  background-color: var(--yellow);
+  padding: 100px 0px 0px 0px;
+  height: 100vh;
+}
+
+.jumbo {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 30px;
+  color: var(--black);
+  text-shadow: 5px 6px var(--white);
+}
+
+.episodes {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.banner {
+  position: absolute;
+  width: 1000px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -500px;
+}
+
+@media screen and (max-width: 700px) {
+  .jumbo {
+    font-size: 4rem;
+    margin-top: 80px;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+/* BURGER */
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+  top: 45%;
+  position: relative;
+}
+
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--black);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--white);
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--black);
+  padding: 20px;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: var(--black);
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
