@@ -1,0 +1,47 @@
+@import "../../styles/main.css";
+
+.footer {
+  width: 100%;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+
+.right {
+  align-self: center;
+}
+
+.left {
+  align-self: center;
+}
+
+.links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0px 0px 10px 0px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.copyright {
+  margin: 5px 0px;
+  color: var(--white);
+}
+
+.logo {
+  width: 150px;
+}
+
+.icon {
+  color: var(--red);
+  margin: 0px 10px 0px 0px;
+  font-size: 1.5rem;
+}
+
+.links a {
+  margin: 0px 10px 0px 0px;
+  color: var(--white);
+  font-size: 1.5rem;
+}

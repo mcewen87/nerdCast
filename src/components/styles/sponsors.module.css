@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.sponsor {
+  width: 100%;
+}
+
+.name {
+  margin: 15px 0px;
+  font-size: 2rem;
+}

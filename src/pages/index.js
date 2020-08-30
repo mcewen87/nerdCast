@@ -10,6 +10,7 @@ import banner from "../images/nerdyBanner.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHandPointRight } from "@fortawesome/free-solid-svg-icons"
 import blog from "../images/typewriter.png"
+import Sponsors from "../components/sponsors"
 
 const IndexPage = () => {
   return (
@@ -33,6 +34,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+        <Sponsors />
       </div>
     </>
   )

@@ -12,6 +12,13 @@ body {
   margin: 20px 0px;
 }
 
+.blackHeader {
+  align-self: flex-start;
+  color: var(--black);
+  font-size: 3rem;
+  padding: 10px;
+  margin: 20px 0px;
+}
 .container {
   width: 100%;
   display: flex;
@@ -43,10 +50,18 @@ body {
 
 .slideTwo {
   background-color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .slideThree {
-  background-color: var(--gray);
+  background-color: var(--white);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* HERO SECTION */

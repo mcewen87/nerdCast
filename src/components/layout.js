@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import style from "./styles/layout.module.css"
 import Spinner from "./spinner"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const [isLoaded, setLoaded] = useState(false)
@@ -31,9 +32,8 @@ const Layout = ({ children }) => {
         outerContainerId={"App"}
         siteTitle={data.site.siteMetadata.title}
       />
-
       <main id="page-wrap">{children}</main>
-      <footer></footer>
+      <Footer />
     </div>
   )
 }
