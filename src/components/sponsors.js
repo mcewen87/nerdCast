@@ -5,7 +5,7 @@ import robotFriday from "../images/robotFriday.jpg"
 
 const Sponsors = props => {
   return (
-    <div className="slideThree">
+    <div className="slideTwo">
       <div className="content">
         <h1 className="blackHeader">Our Sponsors</h1>
         <div className="gridThree">

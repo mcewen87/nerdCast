@@ -57,8 +57,7 @@ body {
 }
 
 .slideThree {
-  background-color: var(--white);
-  min-height: 400px;
+  background-color: var(--yello);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -85,7 +84,17 @@ body {
   margin-top: 60px;
   font-size: 3rem;
   text-align: center;
-  animation: grow 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.discord {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.discordFeatures {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5px 0px;
 }
 
 @keyframes grow {
@@ -126,8 +135,6 @@ body {
 
 .bm-item {
   display: inline-block;
-
-  /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
   color: #d1d1d1;
@@ -148,7 +155,7 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: var(--black);
+  background: var(--green);
 }
 
 /* Position and sizing of clickable cross button */

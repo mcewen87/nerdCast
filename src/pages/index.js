@@ -34,6 +34,15 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+        <div className="slideThree">
+          <div className="content">
+            <h1 className="discord">Click Here to Join or Discord Server</h1>
+            <p className="discordFeatures">Community Q & A's</p>
+            <p className="discordFeatures">Multiple Channels</p>
+            <p className="discordFeatures">Exclusive Content and Giveaways</p>
+            <p className="discordFeatures">Center of the Nerd-Verse</p>
+          </div>
+        </div>
         <Sponsors />
       </div>
     </>
