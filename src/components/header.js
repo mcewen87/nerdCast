@@ -15,23 +15,29 @@ import { bubble as Menu } from "react-burger-menu"
 const Header = props => (
   <header className={style.background}>
     <Menu {...props}>
-      <Link className={style.link} to="/">
+      <a
+        className={style.link}
+        target="_blank"
+        href="https://holynerdypodcast.podbean.com/"
+      >
         Episodes
+      </a>
+
+      <Link className={style.link} to="/">
+        Blog (Coming Soon!)
       </Link>
 
       <Link className={style.link} to="/">
-        Blog
+        Merch (Coming Soon!)
       </Link>
 
-      <Link className={style.link} to="/">
-        Merch
-      </Link>
-
-      <Link className={style.link} to="/">
+      <Link className={style.link} to="/contact">
         Contact
       </Link>
     </Menu>
-    <img src={logo} className={style.logo} />
+    <Link to="/">
+      <img src={logo} className={style.logo} />
+    </Link>
   </header>
 )
 

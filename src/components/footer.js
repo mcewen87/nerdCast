@@ -18,17 +18,30 @@ const Footer = props => {
             <Link className={style.linkOne} to="/">
               Home
             </Link>
-            <Link to="/episodes">Episodes</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/Contact">Contact</Link>
+            <a target="_blank" href="https://holynerdypodcast.podbean.com/">
+              Episodes
+            </a>
+            <Link to="/">Blog (Coming Soon!)</Link>
+            <Link to="/contact">Contact</Link>
           </p>
-          <FontAwesomeIcon className={style.icon} icon={faInstagram} />
-          <FontAwesomeIcon className={style.icon} icon={faTwitter} />
-          <FontAwesomeIcon className={style.icon} icon={faFacebook} />
-          <p className={style.copyright}>Company Name &copy; 2015</p>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/holynerdypod/?hl=en"
+          >
+            <FontAwesomeIcon className={style.icon} icon={faInstagram} />
+          </a>
+          <a target="_blank" href="https://twitter.com/holynerdypod?lang=en">
+            <FontAwesomeIcon className={style.icon} icon={faTwitter} />
+          </a>
+          <a target="_blank" href="https://www.facebook.com/HolyNerdyPodcast">
+            <FontAwesomeIcon className={style.icon} icon={faFacebook} />
+          </a>
+          <p className={style.copyright}>Holy Nerdy Podcast &copy; 2020</p>
         </div>
         <div className={style.right}>
-          <img src={logo} className={style.logo} />
+          <Link to="/">
+            <img src={logo} className={style.logo} />
+          </Link>
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@
 
 body {
   background-color: var(--yellow);
+  font-family: var(--copy);
 }
 
 .whiteHeader {
@@ -10,6 +11,14 @@ body {
   font-size: 3rem;
   padding: 10px;
   margin: 20px 0px;
+}
+
+.red {
+  color: var(--red);
+}
+
+.white {
+  color: var(--white);
 }
 
 .blackHeader {
@@ -38,6 +47,21 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 15px;
+}
+
+.standardColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 10px 0px;
+}
+
+input {
+  padding: 8px;
 }
 
 .slideOne {
@@ -84,6 +108,7 @@ body {
   margin-top: 60px;
   font-size: 3rem;
   text-align: center;
+  animation: grow 1500ms infinite;
 }
 
 .discord {
@@ -147,15 +172,40 @@ body {
 
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   right: 36px;
-  top: 36px;
+  top: 30px;
+  background-color: var(--black);
+  padding: 10px !important;
+  border-radius: 50%;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: var(--green);
+  width: 30px;
+  height: 5px !important;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.bm-burger-bars:nth-child(1) {
+  top: 10% !important;
+  margin-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bm-burger-bars:nth-child(2) {
+  top: 10% !important;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bm-burger-bars:nth-child(3) {
+  top: 10% !important;
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Position and sizing of clickable cross button */
