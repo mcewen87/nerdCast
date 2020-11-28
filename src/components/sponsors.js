@@ -28,7 +28,12 @@ const Sponsors = props => {
             </div>
           </a>
         </div>
-        <p style={{ fontSize: "1.5rem", textAlign: "center" }}>
+        <p
+          style={{
+            fontSize: "1.2rem",
+            textAlign: "center",
+          }}
+        >
           We love promoting fellow creators and small businesses. Contact
           holynerdypodcast@gmail.com to learn about becoming a sponsor of the
           show.
