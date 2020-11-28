@@ -30,10 +30,8 @@ const Sponsors = props => {
         </div>
         <p style={{ fontSize: "1.5rem", textAlign: "center" }}>
           We love promoting fellow creators and small businesses. Contact
-          <span style={{ margin: "0px 10px", color: "#fc5130" }}>
-            holynerdypodcast@gmail.com
-          </span>
-          to learn about becoming a sponsor of the show.
+          holynerdypodcast@gmail.com to learn about becoming a sponsor of the
+          show.
         </p>
       </div>
     </div>
